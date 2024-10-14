@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+   .heading{
+    text-align: center;
+    color: black;
+   }
+   .Button{
+    background-color: #7bbf1c;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 2px;
+   margin-left: 40%;
+   border-radius: 3px;
+
+   }
+   body{
+     background-color: red;
+
+   }
+   .container{
+    background-color: white;
+    text-align: left;
+    justify-content: center;
+    box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;   
+   }
+   .background{
+    width: 500px;
+    margin-left: 30%;
+   }
+
+    </style>
+</head>
+<body>
+    
+    <div class="background">
+        <h1 class="heading">Feedback Form</h1> 
+   <form id="feedback-form">
+    <!--Feedback dropdown-->
+    <div class="container">
+        <label for="feedback-type">Feedback Type</label>
+    <select id="feedback-type" name="feedback-type" required>
+        <option value="">Select</option>
+        <option value="bug">Bug Report</option>
+        <option value="suggetion">Suggetion</option>
+        <option value="report">Report</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+    <br>
+    <!--Text area-->
+    <label for="user-massage">Message</label>
+    <textarea name="user-massage" id="user-massage" rows="4" cols="40" placeholder="Type your Message"></textarea>
+    <br>
+    <br>
+    <!--Radio button for rating-->
+     <label>Website Rating</label>
+     <br>
+     <br>
+     <input type="radio" id="rating-1" name="website-rating" value="1">
+      <label for="rating-1">1</label>
+
+      <input type="radio" id="rating-2" name="website-rating" value="2">
+      <label for="rating-1">2</label>
+      <input type="radio" id="rating-3" name="website-rating" value="3">
+      <label for="rating-1">3</label>
+      <input type="radio" id="rating-4" name="website-rating" value="4">
+      <label for="rating-1">4</label>
+      <input type="radio" id="rating-5" name="website-rating" value="5">
+      <label for="rating-1">5</label>
+      <!-- Number Input for Age -->
+       <br>
+       <br>
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <br><br>
+
+        <!-- Optional Website URL Input -->
+        <label for="website">Website URL (Optional):</label>
+        <input type="url" id="website" name="website">
+        <br><br>
+
+        <!-- Checkbox for Terms and Conditions -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button class="Button" type="submit">Submit</button>
+    </div>
+   
+    </form>
+    </div>
+  
+</body>
+</html>
